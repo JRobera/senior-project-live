@@ -32,12 +32,16 @@ function EmployerMyChat({ socket, selectedC, searchchat }) {
     if (room) {
       // console.log(room);
       axios
-        .get(`http://127.0.0.1:3005/get-message-id/${room}`)
+        .get(
+          `https://senior-project-live-api.onrender.com/get-message-id/${room}`
+        )
         .then((response) => {
           // console.log(response);
           if (response.data == null) {
             axios
-              .post(`http://127.0.0.1:3005/create-room/${room}`)
+              .post(
+                `https://senior-project-live-api.onrender.com/create-room/${room}`
+              )
               .then((response) => {
                 // console.log("New room created");
               });
@@ -46,7 +50,9 @@ function EmployerMyChat({ socket, selectedC, searchchat }) {
             // console.log("Room already exists " + room);
             socket.emit("join_room", room);
             axios
-              .get(`http://127.0.0.1:3005/get-chat/${room}`)
+              .get(
+                `https://senior-project-live-api.onrender.com/get-chat/${room}`
+              )
               .then((response) => {
                 setMessageList([]);
                 setMessageList(response.data?.Message_content);
@@ -66,7 +72,9 @@ function EmployerMyChat({ socket, selectedC, searchchat }) {
     // setRoom(chat_id + "--" + owner_id);
     axios
       .get(
-        `http://127.0.0.1:3005/get-all-message-id/${chat_id + "--" + owner_id}`
+        `https://senior-project-live-api.onrender.com/get-all-message-id/${
+          chat_id + "--" + owner_id
+        }`
       )
       .then((response) => {
         // console.log(response.data);

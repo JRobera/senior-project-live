@@ -19,7 +19,7 @@ const sendPasswordResetEmail = async (req, res) => {
         const secret = process.env.ACCESS_TOKEN_SECRET + response.Password;
         const user = { email: response.Email, id: response._id };
         const token = jwt.sign(user, secret, { expiresIn: "15m" });
-        const resetLink = `http://localhost:3005/reset-password/${token}/${response._id}`;
+        const resetLink = `https://senior-project-live-api.onrender.com/reset-password/${token}/${response._id}`;
 
         const mailOptions = {
           from: process.env.NODEMAILERUSER,

@@ -29,7 +29,7 @@ function FoundUser() {
   };
   const handlePost = () => {
     axios
-      .get(`http://127.0.0.1:3005/post/${foundUser._id}`)
+      .get(`https://senior-project-live-api.onrender.com/post/${foundUser._id}`)
       .then((response) => {
         setData(response.data.Post_id);
         // console.log(response.data.Post_id);
@@ -40,7 +40,9 @@ function FoundUser() {
   };
   const handleArticle = () => {
     axios
-      .get(`http://127.0.0.1:3005/article/${foundUser._id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/article/${foundUser._id}`
+      )
       .then((response) => {
         // console.log(response.data.Article_id);
         setData(response.data.Article_id);

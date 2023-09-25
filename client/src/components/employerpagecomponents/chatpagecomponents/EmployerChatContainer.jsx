@@ -14,7 +14,7 @@ import { AppContext } from "../../../context/AppContexts";
 import axios from "axios";
 import ChatImage from "./ChatImage";
 
-const socket = io.connect("http://127.0.0.1:3005");
+const socket = io.connect("https://senior-project-live-api.onrender.com");
 
 function EmployerChatContainer() {
   const { user, room, messageList, setMessageList } = useContext(AppContext);
@@ -53,7 +53,10 @@ function EmployerChatContainer() {
       setMessageList((list) => [...list, newmessage]);
       socket.emit("send_message", newmessage);
       axios
-        .put(`http://127.0.0.1:3005/update-chat/${room}`, messageList)
+        .put(
+          `https://senior-project-live-api.onrender.com/update-chat/${room}`,
+          messageList
+        )
         .then((response) => {});
       // console.log(messageList);
       setMessage("");
@@ -97,7 +100,10 @@ function EmployerChatContainer() {
     // console.log(messageList);
     if (room) {
       axios
-        .put(`http://127.0.0.1:3005/update-chat/${room}`, messageList)
+        .put(
+          `https://senior-project-live-api.onrender.com/update-chat/${room}`,
+          messageList
+        )
         .then((response) => {});
       // console.log(messageList);
       setMessage("");

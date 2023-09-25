@@ -125,7 +125,7 @@ function Article() {
             // refreshToken();
             axios
               .post(
-                `http://127.0.0.1:3005/new/article`,
+                `https://senior-project-live-api.onrender.com/new/article`,
                 {
                   articleTitle: headline,
                   newArticle: article,

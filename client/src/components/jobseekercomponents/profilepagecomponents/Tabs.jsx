@@ -27,7 +27,7 @@ function Tabs(props) {
               if (tab === `${content.profile}`) {
                 console.log(tab);
                 // axios
-                //   .get(`http://127.0.0.1:3005/profile/${user._id}`)
+                //   .get(`https://senior-project-live-api.onrender.com/profile/${user._id}`)
                 //   .then((response) => {
                 //     console.log(response);
                 //   })
@@ -36,7 +36,7 @@ function Tabs(props) {
                 //   });
               } else if (tab === `${content.post}`) {
                 // axios
-                //   .get(`http://127.0.0.1:3005/post/${user._id}`)
+                //   .get(`https://senior-project-live-api.onrender.com/post/${user._id}`)
                 //   .then((response) => {
                 // console.log(response.data.Post_id);
                 handlePost();
@@ -46,7 +46,7 @@ function Tabs(props) {
                 // });
               } else if (tab === `${content.article}`) {
                 // axios
-                //   .get(`http://127.0.0.1:3005/article/${user._id}`)
+                //   .get(`https://senior-project-live-api.onrender.com/article/${user._id}`)
                 //   .then((response) => {
                 // console.log(response.data.Article_id);
                 handleArticle();

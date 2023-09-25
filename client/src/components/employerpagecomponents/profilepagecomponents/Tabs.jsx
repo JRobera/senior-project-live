@@ -33,7 +33,7 @@ function Tabs(props) {
               handleSelectedTab(active);
               if (tab === `${content.myjobs}`) {
                 // axios
-                //   .get(`http://127.0.0.1:3005/my-jobs/${user._id}`)
+                //   .get(`https://senior-project-live-api.onrender.com/my-jobs/${user._id}`)
                 //   .then((response) => {
                 //     console.log(response.data);
                 handleJobPost();
@@ -43,7 +43,7 @@ function Tabs(props) {
                 // });
               } else if (tab === `${content.post}`) {
                 // axios
-                //   .get(`http://127.0.0.1:3005/post/${user._id}`)
+                //   .get(`https://senior-project-live-api.onrender.com/post/${user._id}`)
                 //   .then((response) => {
                 // console.log(response.data.Post_id);
                 handlePost();
@@ -53,7 +53,7 @@ function Tabs(props) {
                 // });
               } else if (tab === `${content.article}`) {
                 // axios
-                //   .get(`http://127.0.0.1:3005/article/${user._id}`)
+                //   .get(`https://senior-project-live-api.onrender.com/article/${user._id}`)
                 //   .then((response) => {
                 // console.log(response.data.Article_id);
                 handleArticle();

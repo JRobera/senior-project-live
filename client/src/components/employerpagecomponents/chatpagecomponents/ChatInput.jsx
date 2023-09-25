@@ -46,7 +46,10 @@ function ChatInput({ handleChange }) {
             await socket.emit("send_message", newmessage);
             setMessageList((list) => [...list, newmessage]);
             axios
-              .put(`http://127.0.0.1:3005/update-chat`, messageList)
+              .put(
+                `https://senior-project-live-api.onrender.com/update-chat`,
+                messageList
+              )
               .then((response) => {});
             console.log(messageList);
             setMessage("");

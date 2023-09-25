@@ -25,7 +25,7 @@ function FoundCompany() {
   };
   const handlePost = () => {
     axios
-      .get(`http://127.0.0.1:3005/post/${foundUser._id}`)
+      .get(`https://senior-project-live-api.onrender.com/post/${foundUser._id}`)
       .then((response) => {
         setData(response.data.Post_id);
         console.log(response.data.Post_id);
@@ -40,7 +40,9 @@ function FoundCompany() {
 
   const handleJobPost = () => {
     axios
-      .get(`http://127.0.0.1:3005/my-jobs/${foundUser._id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/my-jobs/${foundUser._id}`
+      )
       .then((response) => {
         console.log(response.data);
         setData(response.data);

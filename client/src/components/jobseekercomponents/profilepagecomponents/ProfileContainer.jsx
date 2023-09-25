@@ -50,7 +50,7 @@ function ProfileContainer() {
   };
   const handlePost = () => {
     axios
-      .get(`http://127.0.0.1:3005/post/${user.u_id}`)
+      .get(`https://senior-project-live-api.onrender.com/post/${user.u_id}`)
       .then((response) => {
         setData(response.data.Post_id);
       })
@@ -60,7 +60,7 @@ function ProfileContainer() {
   };
   const handleArticle = () => {
     axios
-      .get(`http://127.0.0.1:3005/article/${user.u_id}`)
+      .get(`https://senior-project-live-api.onrender.com/article/${user.u_id}`)
       .then((response) => {
         // console.log(response.data.Article_id);
         setData(response.data.Article_id);

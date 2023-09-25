@@ -154,6 +154,7 @@ const deleteUserpost = async (req, res) => {
 
   Post.findOneAndRemove({ _id: req.params.postid })
     .then((response) => {
+      removeFromCloudinary(response?.postId);
       res.json("Post Deleted");
     })
     .catch((err) => {

@@ -52,7 +52,7 @@ function EmployerProfileContainer() {
   };
   const handlePost = () => {
     axios
-      .get(`http://127.0.0.1:3005/post/${user.u_id}`)
+      .get(`https://senior-project-live-api.onrender.com/post/${user.u_id}`)
       .then((response) => {
         setData(response.data.Post_id);
       })
@@ -62,7 +62,7 @@ function EmployerProfileContainer() {
   };
   const handleArticle = () => {
     axios
-      .get(`http://127.0.0.1:3005/article/${user.u_id}`)
+      .get(`https://senior-project-live-api.onrender.com/article/${user.u_id}`)
       .then((response) => {
         // console.log(response.data.Article_id);
         setData(response.data.Article_id);
@@ -73,7 +73,7 @@ function EmployerProfileContainer() {
   };
   const handleJobPost = () => {
     axios
-      .get(`http://127.0.0.1:3005/my-jobs/${user.u_id}`)
+      .get(`https://senior-project-live-api.onrender.com/my-jobs/${user.u_id}`)
       .then((response) => {
         console.log(response.data);
         setData(response.data);

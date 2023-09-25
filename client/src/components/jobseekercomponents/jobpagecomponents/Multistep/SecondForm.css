@@ -1,0 +1,74 @@
+/* .modal-container {
+  position: fixed;
+  z-index: 9999;
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  top: 0;
+  left: 0;
+} */
+
+.second-form-page {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  text-align: center;
+}
+.payment-input-wrapper {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  width: 60%;
+}
+
+.payment-input-wrapper label {
+  font-size: 12px;
+}
+
+.payment-input-wrapper fieldset {
+  background-color: #fff;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: red;
+}
+.payment-input-wrapper legend {
+  height: 12px;
+}
+
+.payment-input-wrapper fieldset input {
+  border: none;
+  outline: none;
+  padding: 5px 0px 5px 3px;
+  width: 99%;
+}
+
+.pay-form {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 10px 10px 10px 30px;
+}
+
+.step-button {
+  background-color: rgb(232, 169, 1);
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.btn-donates:hover {
+  background-color: rgb(232, 169, 1);
+}

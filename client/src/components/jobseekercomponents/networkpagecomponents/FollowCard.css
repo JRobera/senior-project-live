@@ -1,0 +1,50 @@
+.card-wrapper {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 5px;
+  width: 30%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.card-wrapper .card-detail {
+  display: flex;
+  gap: 10px;
+}
+
+.card-detail .card-user-detail {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.card-detail .card-user-detail p:nth-child(1) {
+  font-weight: bold;
+}
+
+.card-detail .card-user-detail p:nth-child(2) {
+  font-size: 11px;
+}
+
+.card-wrapper .card-summery {
+  font-size: 13px;
+}
+
+.card-wrapper .btn-card-follow {
+  background-color: transparent;
+  border: solid 1px rgb(232, 169, 1);
+  border-radius: 20px;
+  color: rgb(232, 169, 1);
+  cursor: pointer;
+  /* margin: auto; */
+  outline: none;
+  padding: 5px 0;
+  width: 90%;
+}
+
+.card-wrapper .btn-card-follow:hover {
+  background-color: rgb(232, 169, 1);
+  color: white;
+}

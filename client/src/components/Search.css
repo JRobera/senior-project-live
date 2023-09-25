@@ -1,0 +1,119 @@
+.search-wrapper {
+  position: relative;
+}
+.search {
+  border: 1px solid lightgray;
+  display: flex;
+  width: 280px;
+  min-width: 230px;
+  background-color: #f1eeee;
+  border-radius: 20px;
+  /* padding: 5px; */
+  overflow: hidden;
+}
+/* .search-icon {
+  float: left;
+  width: 20px;
+  height: 20px;
+} */
+
+.search-field {
+  /* background-color: transparent; */
+  width: 100%;
+  flex: 1;
+  border: none;
+  /* margin-left: 5px; */
+  outline: transparent;
+  padding: 10px 0px 10px 5px;
+}
+
+.search-filter {
+  background-color: transparent;
+  font-size: 10px;
+  width: min-content;
+  border: none;
+  outline: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0;
+  text-align: center;
+}
+.search-filter > option {
+  border-radius: 0;
+}
+.search-result {
+  background-color: white;
+  gap: 5px;
+  border-top: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: black;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  max-height: 75vh;
+  margin-left: 15px;
+  width: 90%;
+  overflow-y: scroll;
+  /* padding: 5px; */
+}
+
+.search-result::-webkit-scrollbar {
+  width: 0px;
+}
+
+.post-result {
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  color: black !important;
+  font-size: 12px;
+  gap: 5px;
+  padding: 5px;
+}
+.post-result:hover {
+  background-color: #f3f0ef;
+}
+
+.post-result img {
+  height: 35px;
+  width: 35px;
+}
+.post-result span {
+  flex: 1;
+}
+
+.jobseeker-result,
+.company-result,
+.article-result,
+.job-result {
+  border-bottom: 1px solid lightgray;
+  color: black;
+  display: flex;
+  gap: 5px;
+}
+.jobseeker-result:hover,
+.company-result:hover,
+.article-result:hover,
+.job-result:hover {
+  background-color: #f3f0ef;
+}
+.jobseeker-result > div,
+.company-result > div,
+.article-result > div,
+.job-result > div {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  font-size: 12px;
+  justify-content: center;
+  width: 190px;
+}
+
+.jobseeker-result > div,
+.company-result > div,
+.article-result > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

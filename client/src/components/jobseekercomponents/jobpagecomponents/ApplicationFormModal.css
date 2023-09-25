@@ -1,0 +1,135 @@
+.application-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  margin-top: 50px;
+  height: 65%;
+  overflow: auto;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  margin-left: 10px;
+}
+
+.form__labels {
+  display: flex;
+  width: auto;
+  margin-bottom: 10px;
+}
+#country-code {
+  height: 20px;
+  overflow-y: auto;
+}
+
+.form__inputs {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+input[type="file"] {
+  border: 1px solid #ccc;
+}
+
+button[type="submit"],
+button[type="button"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add placeholder text to the form */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: #999;
+}
+
+/* Style the div that contains the label and input */
+.form-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-field .form__labels {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.form-field input[type="file"] {
+  width: auto;
+  margin: 0;
+}
+
+/* Restrict file upload size */
+input[type="file"] {
+  max-width: 100%;
+}
+
+input[type="file"]:invalid {
+  border: 2px solid #f00;
+}
+
+input[type="file"]:valid {
+  border: 2px solid #0f0;
+}
+
+input[type="file"]:invalid + span::before {
+  content: "Invalid file type or size";
+  color: #f00;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+input[type="file"]:valid + span::before {
+  content: "File is valid";
+  color: #0f0;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #ccc;
+}

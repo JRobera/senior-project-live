@@ -1,0 +1,59 @@
+.card {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+  width: max-content;
+  height: max-content;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  right: 0px;
+  top: 65px;
+  z-index: 1000;
+}
+
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+  padding: 5px 0;
+  width: 100%;
+  border: solid 1px rgb(232, 169, 1);
+  border-radius: 3px;
+}
+.card a:hover,
+.card .sign-out:hover {
+  color: black;
+}
+hr {
+  border: none;
+  border-bottom: solid #bebebe 1px;
+  padding-bottom: 5px;
+}
+
+.card .language .header {
+  margin-bottom: 5px;
+}
+
+.card .sign-out {
+  color: gray;
+}
+
+.me-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.me-wrapper .me-info .name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.me-wrapper .me-info .title {
+  color: rgb(103, 101, 101);
+  font-size: 9px;
+}

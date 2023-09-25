@@ -1,0 +1,227 @@
+.ed-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.edit-profile-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  height: 100vh;
+  position: static;
+  margin: auto;
+  width: 75%;
+}
+.ed-wrapper-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bebebe;
+  padding: 10px 15px;
+}
+
+.ed-wrapper-header > p {
+  flex: 1;
+}
+.ed-close {
+  font-size: 18px;
+}
+.ed-close:hover {
+  background-color: #f3f0ef;
+  cursor: pointer;
+}
+.edit-profile-wrapper form {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 10px 30px;
+}
+
+form::-webkit-scrollbar {
+  background-color: #d8d8d8be;
+  border-radius: 10px;
+  scrollbar-width: 5px;
+  width: 5px;
+}
+
+form::-webkit-scrollbar-thumb {
+  background-color: #bebebe; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+}
+
+.edit-profile-wrapper form input,
+.edit-profile-wrapper form textarea {
+  padding: 5px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+form .fname-container,
+form .job-title-container,
+.about-container {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+form .fname-container label,
+form .job-title-container label,
+.about-container label {
+  font-size: 12px;
+}
+
+.about-container textarea {
+  resize: vertical;
+  max-height: 240px;
+  min-height: 20px;
+}
+
+.ed-current-position > .ex-header,
+.add-exp,
+.ed-education > .ed-header,
+.add-edu,
+.ed-certification > .ec-header,
+.add-cer {
+  margin: 15px 0px;
+}
+
+.ed-current-position div,
+.ed-education div,
+.ed-certification div {
+  color: rgb(232, 169, 1);
+  font-size: 14px;
+}
+
+.ed-location > div {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ed-location > div .country-name,
+.city-name {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.ed-location > div .country-name label,
+.city-name label {
+  font-size: 12px;
+}
+
+.ed-skill,
+.ed-contact {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  margin: 15px 0px;
+}
+
+.ed-skill > span,
+.ed-contact > span {
+  color: rgb(232, 169, 1);
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.ed-wrapper-footer {
+  position: relative;
+  border-top: 1px solid #bebebe;
+  text-align: right;
+  padding: 10px 15px;
+}
+
+.ed-wrapper-footer .btn-save-profile {
+  background-color: rgb(232, 169, 1);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  outline: transparent;
+  padding: 5px;
+}
+.ed-current-position .add-exp,
+.ed-education .add-edu,
+.ed-certification .add-cer {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.add-exp-form,
+.add-edu-form,
+.add-cer-form {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.add-edu-form textarea,
+.add-exp-form textarea,
+.add-cer-form textarea {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  max-height: 240px;
+  min-height: 10px;
+  padding: 5px;
+  resize: vertical;
+}
+
+.btn-add-edu,
+.btn-add-exp,
+.btn-add-cer {
+  background-color: rgb(232, 169, 1);
+  color: white;
+  cursor: pointer;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.new-skills {
+  display: flex;
+  gap: 10px;
+}
+
+.new-skills > p {
+  align-items: center;
+  background-color: rgb(232, 169, 1);
+  border-radius: 5px;
+  display: flex;
+  font-size: 13px;
+  gap: 5px;
+  height: 20px;
+  padding: 10px;
+}
+
+.new-skills > p span:nth-child(1) {
+  color: white;
+}
+.new-skills > p span:nth-child(2) {
+  cursor: pointer;
+}
+
+.add-skill-input {
+  display: flex;
+  gap: 10px;
+}
+.add-skill-input > input {
+  flex: 0.3;
+}
+
+.add-skill-input > button {
+  padding: 10px;
+  background-color: rgb(232, 169, 1);
+  border: none;
+  border-radius: 5px;
+}

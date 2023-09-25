@@ -1,0 +1,31 @@
+.pages {
+  align-items: center;
+  color: #656565;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  /* margin-left: 40px; */
+  position: relative;
+}
+.pages:hover {
+  color: #000;
+}
+
+.pages.active-page {
+  border-bottom: 3px solid rgb(232, 169, 1);
+}
+
+.pages:hover::after {
+  width: 100%;
+  right: unset;
+  left: 0;
+}
+
+/* .icon {
+  width: 20px;
+  height: 20px;
+} */
+.icon-name {
+  font-size: 10px;
+  font-weight: bold;
+}

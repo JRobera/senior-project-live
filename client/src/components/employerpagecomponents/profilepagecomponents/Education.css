@@ -1,0 +1,28 @@
+.edu-wrapper {
+  background-color: #ffffff;
+  outline: solid #bebebe 1px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.edu-wrapper div {
+  padding: 5px;
+}
+
+.edu-details {
+  display: flex;
+}
+
+.edu-details .details {
+  padding-left: 15px;
+  gap: 10px;
+}
+
+.edu-details .details .school {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.edu-details .details p {
+  font-size: 12px;
+}

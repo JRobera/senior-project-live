@@ -1,0 +1,70 @@
+footer {
+  background-color: #ffffff;
+  display: flex;
+  gap: 10px;
+  line-height: 1.6;
+  font-size: 10px;
+  margin-top: 35px;
+  padding: 20px 50px 35px;
+}
+.header {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.bottom-nav {
+  flex: 1;
+}
+.bottom-nav-items {
+  display: flex;
+}
+.bottom-nav .first-col,
+.second-col {
+  flex: 1;
+}
+.bottom-nav + div {
+  display: flex;
+  flex: 1;
+  gap: 35px;
+}
+
+.bottom-nav + div .fast-access,
+.language {
+  max-width: 200px;
+  flex: 1;
+}
+
+.fast-access {
+  display: flex;
+  flex-flow: column;
+}
+/* .fast-access * {
+  flex: 1;
+} */
+
+.fast-access .questions {
+  background-color: rgb(232, 169, 1);
+  border-radius: 5px;
+  display: flex;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+  outline: solid 1px #bebebe;
+  justify-content: space-between;
+}
+
+.fast-access .settings {
+  display: flex;
+  padding: 6px;
+  outline: solid 1px rgb(232, 169, 1);
+  border-radius: 5px;
+  color: rgb(232, 169, 1);
+  font-weight: bold;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.fast-access .questions svg,
+.settings svg {
+  align-self: center;
+}

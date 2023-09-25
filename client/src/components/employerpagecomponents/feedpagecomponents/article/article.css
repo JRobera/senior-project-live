@@ -1,0 +1,27 @@
+.compose {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+#article-headline {
+  width: fit-content;
+  margin: 15px 0px 0px 15px;
+  font-size: 40px;
+  height: 51px;
+  resize: none;
+}
+
+.btn-publish {
+  align-self: end;
+  background-color: rgb(232, 169, 1);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-right: 25px;
+  outline: transparent;
+  padding: 5px 15px;
+  width: max-content;
+}

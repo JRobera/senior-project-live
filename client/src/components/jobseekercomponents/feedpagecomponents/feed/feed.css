@@ -1,0 +1,56 @@
+.feed {
+  flex: 0.8;
+}
+
+.feed__inputContainer {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 20px;
+  padding: 10px;
+  /* padding-bottom: 20px; */
+  /* width: 100%; */
+}
+
+.feed__input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  height: 40px;
+  color: gray;
+}
+
+.feed__input > .feed__input__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.feed__input > .feed__input__wrapper > textarea {
+  border: none;
+  flex: 1;
+  outline: transparent;
+  resize: vertical;
+}
+
+.feed__input > .feed__input__wrapper > .btn-text-post {
+  align-self: center;
+  background-color: rgb(232, 169, 1);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  height: min-content;
+  padding: 8px;
+}
+
+.feed__input > form > .btn-text-post:hover {
+  color: rgb(232, 169, 1);
+  background-color: white;
+  border: solid 1px rgb(232, 169, 1);
+}
+
+.feed__inputOptions {
+  display: flex;
+  justify-content: space-between;
+}

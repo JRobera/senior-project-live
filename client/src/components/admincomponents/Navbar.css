@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #f0f0f0;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .menu.show {
+    display: flex;
+  }
+  
+  .menu .item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu .item:hover {
+    background-color: #f0f0f0;
+  }

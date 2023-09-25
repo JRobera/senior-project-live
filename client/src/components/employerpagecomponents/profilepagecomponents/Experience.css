@@ -1,0 +1,33 @@
+.exp-wrapper {
+  background-color: #ffffff;
+  outline: solid #bebebe 1px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.exp-wrapper div {
+  padding: 5px;
+}
+
+.exp-details {
+  display: flex;
+}
+
+.exp-details .details {
+  padding-left: 15px;
+  gap: 10px;
+}
+
+.exp-details .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.exp-details .type {
+  font-weight: bold;
+}
+
+.exp-details .type,
+.time,
+.exp-description {
+  font-size: 12px;
+}

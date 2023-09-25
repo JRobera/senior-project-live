@@ -1,0 +1,31 @@
+.btnPay {
+    /* background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-bottom: 20px; */
+  background-color: rgb(232, 169, 1);
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* bottom:25px;
+  right: 120px;
+  position: absolute; */
+}
+.btnPay:hover {
+  background-color: #fff;
+  color: rgb(232, 169, 1);
+}

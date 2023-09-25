@@ -1,0 +1,18 @@
+.reported-wrapper .report-header {
+  display: flex;
+}
+
+.reported-wrapper .report-header > span {
+  border: 1px solid lightgray;
+  flex: 1;
+  padding: 5px;
+}
+
+.reported-wrapper .report-detail {
+  display: flex;
+}
+.reported-wrapper .report-detail > span {
+  border: 1px solid lightgray;
+  flex: 1;
+  padding: 5px;
+}

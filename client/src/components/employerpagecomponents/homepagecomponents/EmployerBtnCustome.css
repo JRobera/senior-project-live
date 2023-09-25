@@ -1,0 +1,43 @@
+.btn-outline-one {
+  background-color: #ffffff;
+  border: 1px solid rgb(232, 169, 1);
+  border-radius: 15px;
+  color: rgb(232, 169, 1);
+  padding: 5px 20px;
+}
+
+.btn-outline-two {
+  background-color: #ffffff;
+  border: 1px solid rgb(232, 169, 1);
+  border-radius: 30px;
+  color: rgb(232, 169, 1);
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+/* .btn-outline-one > a,
+.btn-outline-two > a {
+  color: rgb(232, 169, 1);
+} */
+
+.btn-filled-one {
+  background-color: rgb(232, 169, 1);
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 5px 20px;
+  border: 1px solid rgb(232, 169, 1);
+}
+
+.btn-filled-two {
+  background-color: rgb(232, 169, 1);
+  border: 1px solid rgb(232, 169, 1);
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 10px 25px;
+  font-size: 15px;
+}
+
+/* .btn-filled-one > a,
+.btn-filled-two > a {
+  color: #ffffff;
+} */

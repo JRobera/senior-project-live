@@ -1,0 +1,7 @@
+.language select {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  outline: solid 1px rgb(232, 169, 1);
+  padding: 5px;
+}

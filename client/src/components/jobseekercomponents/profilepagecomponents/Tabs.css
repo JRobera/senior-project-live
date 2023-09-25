@@ -1,0 +1,31 @@
+.tabs {
+  display: flex;
+  gap: 2px;
+  align-items: stretch;
+  /* justify-content: space-between; */
+  border-bottom: solid 1.3px #bebebe;
+  padding-bottom: 7px;
+  margin-top: 5px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1;
+  height: 17px;
+  padding: 5px 20px;
+  background-color: #ffffff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.active {
+  /* padding: 10px 20px; */
+  background-color: rgb(232, 169, 1);
+  min-height: 100%;
+  position: relative;
+  bottom: 10px;
+  color: #ffffff;
+}

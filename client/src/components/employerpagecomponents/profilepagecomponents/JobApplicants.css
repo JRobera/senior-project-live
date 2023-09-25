@@ -1,0 +1,43 @@
+.applicant-table-wrapper {
+  background-color: white;
+  border-radius: 5px;
+  width: 70%;
+  margin: auto;
+  height: 345px;
+  overflow-y: auto;
+  transform: translateY(50px);
+}
+
+.applicant-table-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.applicant-table-header > .a-table-title {
+  border: 1px solid lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+.applicant-table-header > .columns {
+  display: flex;
+}
+
+.applicant-table-header > .columns > span {
+  border: 1px solid lightgray;
+  flex: 1;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.applicant-detail {
+  display: flex;
+}
+
+.applicant-detail > span,
+.applicant-detail > a {
+  border: 1px solid lightgray;
+  color: black;
+  flex: 1;
+  font-size: 13px;
+  padding: 10px;
+}

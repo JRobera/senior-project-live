@@ -1,0 +1,33 @@
+.job-list-item-wrapper {
+  background-color: white;
+  border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+  position: relative;
+  max-width: 230px;
+}
+
+.job-list-item-wrapper div p {
+  font-size: 12px;
+}
+
+.job-list-item-wrapper .job-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 5px;
+}
+
+.job-list-skills-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.job-list-skills-wrapper .job-list-item-skill {
+  background-color: rgb(232, 169, 1);
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  padding: 5px;
+}

@@ -1,0 +1,20 @@
+.about-wrapper {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  outline: solid #bebebe 1px;
+  padding: 15px;
+}
+.about-wrapper div {
+  padding: 5px;
+}
+
+.about-wrapper div p {
+  font-size: 12px;
+}
+.about-wrapper div span {
+  color: #0275b1;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}

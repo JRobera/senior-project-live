@@ -1,0 +1,66 @@
+.network-wrapper {
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  padding-bottom: 50px;
+  width: 90%;
+}
+
+.manage-my-network-wrapper {
+  background-color: white;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  flex: 1;
+  font-size: 14px;
+  height: min-content;
+  /* padding: 10px; */
+}
+
+.manage-my-network-wrapper .mg-header {
+  padding: 10px;
+}
+
+.manage-my-network-wrapper .manage {
+  display: flex;
+  flex-flow: column;
+  /* gap: 10px; */
+  /* margin-top: 10px; */
+}
+
+.recommendation {
+  background-color: white;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex: 3;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.mg-item {
+  border-top: solid 0.5px lightgray;
+  border-bottom: solid 0.5px lightgray;
+  display: flex;
+  font-size: 13px;
+  gap: 5px;
+  padding: 5px 15px;
+}
+
+.active-mg {
+  border-left: solid 5px rgb(232, 169, 1);
+}
+
+.mg-item:hover {
+  background-color: #f3f0ef;
+}
+
+.mg-item > img {
+  flex: 1;
+}
+
+.mg-item > p {
+  flex: 5;
+}

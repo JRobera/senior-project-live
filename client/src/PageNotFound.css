@@ -1,0 +1,12 @@
+.page-not-found {
+  font-size: 30px;
+  padding: 10%;
+  text-align: center;
+}
+
+.p404 {
+  color: crimson;
+}
+.page-not-found-message {
+  font-size: 15px;
+}

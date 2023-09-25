@@ -1,0 +1,27 @@
+.comment-input-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.comment-input-wrapper #add-comment {
+  border: none;
+  border-radius: 3px;
+  flex: 1;
+  resize: vertical;
+  outline: solid 1.5px lightgray;
+  padding: 3px;
+}
+#add-comment:focus {
+  outline: solid 1.5px gray;
+}
+.btn-post-comment {
+  background-color: transparent;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+}
+.btn-post-comment:hover {
+  background-color: whitesmoke;
+}

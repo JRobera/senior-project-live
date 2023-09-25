@@ -1,0 +1,98 @@
+.widgets {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: sticky;
+  top: 80px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  height: fit-content;
+  min-width: 21%;
+  padding-bottom: 10px;
+}
+
+/* .widgets__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  } */
+
+.widgets__header > h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.widgets__article {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.widgets__article:hover {
+  background-color: whitesmoke;
+}
+
+.widgets__articleLeft {
+  color: rgb(232, 169, 1);
+  margin-right: 5px;
+}
+
+.widgets__articleLeft > .MuiSvgIcon-root {
+  font-size: 15px;
+}
+
+.widgets__articleRight {
+  flex: 1;
+}
+
+.widgets__articleRight > h4 {
+  font-synthesis: 14px;
+}
+
+.widgets__articleRight > p {
+  font-size: 12px;
+  color: gray;
+}
+
+.widget__group {
+  padding: 15px;
+}
+.title__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.edit-group-list {
+  color: rgb(232, 169, 1);
+}
+
+.title__wrapper > h5::after {
+  border: 20px solid red;
+}
+.widgetData {
+  padding: 2px;
+}
+.widgetData__container {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 3px;
+}
+
+.widgetData__container > img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.widgetData__title > span {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.bottom__title {
+  color: rgb(232, 169, 1);
+  cursor: pointer;
+  margin-top: 5px;
+}

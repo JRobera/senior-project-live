@@ -1,0 +1,13 @@
+.home-page-nav {
+  gap: 13%;
+  justify-content: space-between;
+}
+
+.home-page-nav .nav-icons {
+  gap: 45px;
+}
+
+.home-nav-btn {
+  display: flex;
+  gap: 40px;
+}

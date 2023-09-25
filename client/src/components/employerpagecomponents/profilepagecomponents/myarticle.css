@@ -1,0 +1,44 @@
+.profile-article {
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  width: fit-content;
+  margin: auto;
+}
+
+.profile-article-header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.profile-user-info {
+  margin-left: 10px;
+}
+
+.profile-user-info > h4 {
+  font-size: 12px;
+}
+
+.profile-user-info > h4 {
+  font-size: 11px;
+}
+
+.profile-article-body {
+  overflow-wrap: anywhere;
+}
+
+.profile-article-body * {
+  width: 710px;
+}
+
+.profile-article-body .message {
+  overflow: auto;
+}
+.profile-article-body .message iframe {
+  min-height: 300px;
+}

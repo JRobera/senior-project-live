@@ -1,0 +1,27 @@
+.my-chat {
+  border-top: 1px solid #bebebe;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.active-chat {
+  border-left: 5px solid rgb(232, 169, 1);
+}
+
+.my-chat > div {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.my-chat > div .last-chat .name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.my-chat > div .last-chat {
+  flex: 1;
+}
+
+.my-chat > div .last-chat .last-chat-content {
+  font-size: 10px;
+}

@@ -1,0 +1,13 @@
+.found-a.ql-editor {
+  padding: 0px !important;
+}
+.article {
+  padding: 10px 30px 30px;
+}
+
+.author {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  padding-left: 30px;
+}

@@ -1,0 +1,12 @@
+.feed-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 50px;
+  width: 90%;
+}
+
+.feed {
+  flex: 0.8;
+}

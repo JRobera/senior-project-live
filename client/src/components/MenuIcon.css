@@ -1,0 +1,39 @@
+.ham-menu {
+  display: none;
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
+
+.ham-menu span {
+  background-color: rgb(232, 169, 1);
+  border-radius: 5px;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 3px;
+  position: relative;
+  left: 0;
+  transition: transform 0.5s, width 0.2s;
+}
+
+.ham-menu > input {
+  appearance: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.ham-menu > input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(4px, 3px);
+}
+
+.ham-menu > input:checked ~ span:nth-child(3) {
+  width: 0;
+  right: 0;
+}
+
+.ham-menu > input:checked ~ span:nth-child(4) {
+  transform: rotate(315deg) translate(5px, -5px);
+}

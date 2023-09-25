@@ -1,0 +1,85 @@
+.message-wrapper {
+  max-width: 60%;
+  margin: 5px;
+  position: relative;
+  display: grid;
+}
+.message-wrapper > div {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+}
+.message-wrapper > .you {
+  justify-content: end;
+}
+.message-wrapper-chat {
+  left: 15px;
+}
+
+.message-wrapper-chat > div {
+  display: flex;
+}
+
+.message-wrapper-chat img {
+  grid-area: 1 / 1;
+}
+
+.message-wrapper-you {
+  text-align: right;
+  float: right;
+  left: 37%;
+  /* right: -319px; */
+  justify-content: end;
+}
+
+.message-wrapper-you img {
+  grid-area: 1 / 2;
+}
+.message-wrapper .message {
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px;
+  position: relative;
+}
+.message-wrapper .chat-time {
+  font-size: 10px;
+  color: #bebebebe;
+}
+.message-wrapper .chat-message {
+  background-color: rgb(105, 105, 211);
+  border-bottom-left-radius: 0;
+}
+.message-wrapper .chat-message::after {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(
+    133deg,
+    transparent 50%,
+    rgb(105, 105, 211) 50%
+  );
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  left: -10px;
+}
+
+.message-wrapper .you-message {
+  background-color: rgb(79, 165, 223);
+  border-bottom-right-radius: 0;
+  text-align: left;
+}
+
+.message-wrapper .you-message::after {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(
+    228deg,
+    transparent 50%,
+    rgb(79, 165, 223) 50%
+  );
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: -10px;
+}

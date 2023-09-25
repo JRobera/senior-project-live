@@ -1,0 +1,64 @@
+.notif-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  padding-bottom: 50px;
+  width: 70%;
+  overflow: hidden;
+}
+
+.notifications {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.notification {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  gap: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.notification .notif-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.notification .notif-body {
+  flex: 1;
+}
+.notification:hover {
+  background-color: #dfdcdc;
+}
+
+.notification .more {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.notification .more:hover {
+  background-color: #c2c2c2;
+}
+.notification .more-popup {
+  background-color: #fff;
+  border-top-right-radius: unset;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: unset;
+  box-shadow: 0 0px 5px -3px black;
+  bottom: -30px;
+  position: absolute;
+  right: 0;
+  padding: 15px;
+  z-index: 2000;
+}
+
+.more-popup > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

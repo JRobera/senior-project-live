@@ -1,0 +1,63 @@
+.comment {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+.reply {
+  /* margin-left: 40px; */
+}
+
+.comment-item {
+  background-color: #f3f0ef;
+  border-radius: 8px;
+  flex: 1;
+  padding: 15px 15px 10px;
+}
+
+.reply-to {
+  font-size: 12px;
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+.reply-to p:nth-child(2) {
+  font-size: 11px;
+}
+.comment-user .comment-user-name {
+  font-size: 13px;
+  font-weight: lighter;
+}
+.comment-user .comment-user-job-title {
+  font-size: 12px;
+  color: lightgray;
+}
+.comment-text {
+  font-size: 14px;
+}
+.comment-reaction {
+  display: flex;
+  font-size: 11px;
+  gap: 10px;
+  margin: 10px 0 10px;
+}
+
+.comment-reaction span {
+  padding: 3px;
+  border-radius: 3px;
+}
+.comment-reaction span:hover {
+  background-color: #e2e2e1;
+}
+
+.btn-reply-comment {
+  background-color: transparent;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+}
+
+.btn-reply-comment:hover {
+  background-color: #e2e2e1;
+}

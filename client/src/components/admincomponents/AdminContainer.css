@@ -1,0 +1,40 @@
+.admin {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.admin-container {
+  display: flex;
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #f0f0f0;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile div {
+  margin-left: 10px;
+  cursor: pointer;
+}

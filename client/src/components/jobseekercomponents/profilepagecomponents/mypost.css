@@ -1,0 +1,80 @@
+.actions {
+  right: 10px;
+  position: absolute;
+}
+.actions-more-popup {
+  background-color: #f3f0ef;
+  border: solid 0.2px lightgray;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  z-index: 100;
+}
+iframe {
+  width: 100%;
+}
+p.post-description {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5px;
+  /* width: inherit; */
+}
+
+.delete-post,
+.edit-post {
+  padding: 5px;
+}
+
+.delete-post:hover,
+.edit-post:hover {
+  background-color: white;
+}
+
+.edit-post-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.edit-post-wrapper {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: auto;
+  padding: 10px;
+  transform: translateY(50vh);
+  width: 40%;
+}
+
+.edit-post-wrapper textarea {
+  min-height: 40px;
+}
+
+.edit-post-wrapper > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-post-wrapper .btn-edit-post-cancle,
+.edit-post-wrapper .btn-update-post {
+  width: max-content;
+  color: white;
+  background-color: rgb(232, 169, 1);
+  border: 1px solid rgb(232, 169, 1);
+  padding: 5px 15px;
+  border-radius: 3px;
+  outline: transparent;
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+.edit-post-wrapper .btn-edit-post-cancle:hover,
+.edit-post-wrapper .btn-update-post:hover {
+  background-color: white;
+  color: rgb(232, 169, 1);
+}

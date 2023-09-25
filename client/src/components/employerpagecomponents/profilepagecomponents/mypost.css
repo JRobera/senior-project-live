@@ -1,0 +1,18 @@
+.actions {
+  right: 10px;
+  position: absolute;
+}
+.actions-more-popup {
+  background-color: #f3f0ef;
+  padding: 5px;
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+}
+iframe {
+  width: 100%;
+}
+p.post-description {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5px;
+}

@@ -17,7 +17,6 @@ function TopProfileContainer({ fuser, handleProfileEditRefresh }) {
 
   function handleSelectProfileImage(e) {
     const file = e.target.files[0];
-
     // Create a new FormData object and append the selected profile image
     const formData = new FormData();
     formData.append("profileImage", file);

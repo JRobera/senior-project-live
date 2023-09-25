@@ -9,7 +9,6 @@ import { generatesuccess } from "../../../utility/Toasts";
 function MyArticle({ name, description, message, id, userid, handleArticle }) {
   const msg = useRef();
   const [showMore, setShowMore] = useState();
-
   useEffect(() => {
     const element = msg.current;
     element.innerHTML = message;

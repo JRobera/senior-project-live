@@ -21,6 +21,7 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
 .active {
   /* padding: 10px 20px; */
   background-color: rgb(232, 169, 1);

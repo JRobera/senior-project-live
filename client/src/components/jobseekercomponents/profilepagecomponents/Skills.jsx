@@ -3,7 +3,6 @@ import "./Skills.css";
 import { AppContext } from "../../../context/AppContexts";
 
 function Skills({ skills }) {
-  // console.log(skills);
   const { content } = useContext(AppContext);
   return (
     <div className="skill-wrapper">

@@ -9,7 +9,6 @@ function Tabs(props) {
   const [active, setActive] = useState(`${content.profile}`);
   // const { user } = useContext(AppContext);
   const tabs = [`${content.profile}`, `${content.post}`, `${content.article}`];
-
   useEffect(() => {
     handleSelectedTab(active);
   }, [active]);

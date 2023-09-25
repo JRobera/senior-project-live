@@ -15,7 +15,6 @@ import Navigation from "../../Navigation";
 import MyArticle from "./MyArticle";
 import { AppContext } from "../../../context/AppContexts";
 import MyPost from "./MyPost";
-import Footer from "../../Footer";
 import axios from "axios";
 
 function ProfileContainer() {

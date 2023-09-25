@@ -8,7 +8,9 @@ function DeleteAdmin({ handleShowDeleteAdminPopUp }) {
 
   function handleDeleteAdmin() {
     axios
-      .post("http://localhost:3005/delete-admin", { adminName })
+      .post("https://senior-project-live-api.onrender.com/delete-admin", {
+        adminName,
+      })
       .then((response) => {
         if (response) {
           generatesuccess(response.data);

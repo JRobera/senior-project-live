@@ -38,12 +38,16 @@ function PhotoPost({ handlePhotoInputClick, handleRefreshOnPost }) {
     formData.append("postDescription", postDescription);
     setIsLoading(true);
     axios
-      .post(`http://localhost:3005/new/photo-post/${user.u_id}`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-          Authorization: "Bearer " + accessToken,
-        },
-      })
+      .post(
+        `https://senior-project-live-api.onrender.com/new/photo-post/${user.u_id}`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            Authorization: "Bearer " + accessToken,
+          },
+        }
+      )
       .then((response) => {
         handlePhotoInputClick();
         generatesuccess(response.data);

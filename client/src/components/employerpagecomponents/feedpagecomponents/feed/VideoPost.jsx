@@ -41,12 +41,16 @@ function VideoPost({ handleVideoInputClick, handleRefreshOnPost }) {
     setIsLoading(true);
 
     axios
-      .post(`http://localhost:3005/new/video-post/${user.u_id}`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-          Authorization: "Bearer " + accessToken,
-        },
-      })
+      .post(
+        `https://senior-project-live-api.onrender.com/new/video-post/${user.u_id}`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            Authorization: "Bearer " + accessToken,
+          },
+        }
+      )
       .then((response) => {
         handleVideoInputClick();
         generatesuccess(response.data);

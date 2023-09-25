@@ -25,7 +25,7 @@ function ResetPassword() {
     if (newPassword.newpassword === newPassword.confirmpassword) {
       axios
         .post(
-          `http://localhost:3005/reset-password/${params.token}/${params.id}`,
+          `https://senior-project-live-api.onrender.com/reset-password/${params.token}/${params.id}`,
           {
             newpass: newPassword.newpassword,
             confpass: newPassword.confirmpassword,

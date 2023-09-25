@@ -58,7 +58,9 @@ function Post({
 
   function handleLike() {
     axios
-      .patch(`http://localhost:3005/like/post/${id}/${user?.u_id}`)
+      .patch(
+        `https://senior-project-live-api.onrender.com/like/post/${id}/${user?.u_id}`
+      )
       .then((response) => {
         if (response.data) {
           handleRefreshOnPost();
@@ -79,7 +81,9 @@ function Post({
 
   function handleShare() {
     axios
-      .post(`http://localhost:3005/share/post/${user?.u_id}/${id}`)
+      .post(
+        `https://senior-project-live-api.onrender.com/share/post/${user?.u_id}/${id}`
+      )
       .then((response) => {
         generatesuccess(response.data);
       });
@@ -124,19 +128,25 @@ function Post({
           onClick={() => {
             !isFollowing
               ? axios
-                  .patch(`http://localhost:3005/follow/user`, {
-                    poster_id: author?._id,
-                    user_id: user?.u_id,
-                  })
+                  .patch(
+                    `https://senior-project-live-api.onrender.com/follow/user`,
+                    {
+                      poster_id: author?._id,
+                      user_id: user?.u_id,
+                    }
+                  )
                   .then((response) => {
                     setIsFollowing(true);
                     console.log(response.data);
                   })
               : axios
-                  .patch(`http://localhost:3005/unfollow/user`, {
-                    poster_id: author?._id,
-                    user_id: user?.u_id,
-                  })
+                  .patch(
+                    `https://senior-project-live-api.onrender.com/unfollow/user`,
+                    {
+                      poster_id: author?._id,
+                      user_id: user?.u_id,
+                    }
+                  )
                   .then((response) => {
                     setIsFollowing(false);
                     console.log(response.data);
@@ -189,9 +199,12 @@ function Post({
                   className="btn-report"
                   onClick={() => {
                     axios
-                      .post(`http://localhost:3005/report/post/${id}`, {
-                        report,
-                      })
+                      .post(
+                        `https://senior-project-live-api.onrender.com/report/post/${id}`,
+                        {
+                          report,
+                        }
+                      )
                       .then((resposne) => {
                         generatesuccess(resposne.data);
                         setShowReport(false);

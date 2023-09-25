@@ -36,7 +36,7 @@ function MeCard() {
         onClick={() => {
           axios
             .post(
-              "http://localhost:3005/user/logout",
+              "https://senior-project-live-api.onrender.com/user/logout",
               {},
               { withCredentials: true }
             )

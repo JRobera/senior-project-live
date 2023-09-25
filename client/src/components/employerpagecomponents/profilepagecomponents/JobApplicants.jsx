@@ -10,7 +10,9 @@ function JobApplicants() {
 
   function handleJobPostDetail() {
     axios
-      .get(`http://localhost:3005/get-applicants/${params.id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get-applicants/${params.id}`
+      )
       .then((response) => {
         setApplicants(response.data);
         console.log(response.data);

@@ -42,17 +42,17 @@ const paymentCallback = async (req, res) => {
       // You can now store the user's inputs in your database
       // Return a success response to the user
       // res.send("Payment successful. Job posted successfully.");
-      // res.redirect("http://localhost:3000/payment-success");
-      // res.redirect("http://localhost:3000/jobs?showModal=true");
+      // res.redirect("https://habesha-net.onrender.com/payment-success");
+      // res.redirect("https://habesha-net.onrender.com/jobs?showModal=true");
       res.redirect(
-        "http://localhost:3000/emp/jobs?showModal=true&paymentSuccess=true"
+        "https://habesha-net.onrender.com/emp/jobs?showModal=true&paymentSuccess=true"
       );
     } else {
       // Payment was not successful
       // Handle unsuccessful payment
       // Return a failure response to the user
       // res.send("Payment failed. Job post failed.");
-      res.redirect("http://localhost:3000/payment-failure");
+      res.redirect("https://habesha-net.onrender.com/payment-failure");
     }
   } catch (error) {
     console.error(error);

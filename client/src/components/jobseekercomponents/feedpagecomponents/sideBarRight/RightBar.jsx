@@ -11,14 +11,18 @@ function Sidebar() {
   const [userSideBar, setUserSideBar] = useState();
 
   function getArticle() {
-    axios.get("http://localhost:3005/latest/article").then((response) => {
-      setTrandArticle(response.data);
-    });
+    axios
+      .get("https://senior-project-live-api.onrender.com/latest/article")
+      .then((response) => {
+        setTrandArticle(response.data);
+      });
   }
 
   function getUser() {
     axios
-      .get(`http://localhost:3005/get-user-by-email/${user.u_email}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get-user-by-email/${user.u_email}`
+      )
       .then((response) => {
         setUserSideBar(response.data);
         // console.log(userSideBar);

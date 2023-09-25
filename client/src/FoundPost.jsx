@@ -15,7 +15,9 @@ function FoundPost() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/found/post/${params.id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/found/post/${params.id}`
+      )
       .then((response) => {
         if (response) {
           setPost(response.data);

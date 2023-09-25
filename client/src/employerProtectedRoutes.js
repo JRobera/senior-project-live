@@ -9,7 +9,7 @@ import { generateError } from "./utility/Toasts";
 async function Auth() {
   try {
     const response = await axios.post(
-      "http://localhost:3005/api/erefresh",
+      "https://senior-project-live-api.onrender.com/api/erefresh",
       {},
       {
         withCredentials: true,
@@ -34,7 +34,7 @@ function EmployerProtectedRoutes() {
     try {
       axios
         .post(
-          `http://localhost:3005/api/erefresh`,
+          `https://senior-project-live-api.onrender.com/api/erefresh`,
           {},
           {
             withCredentials: true,

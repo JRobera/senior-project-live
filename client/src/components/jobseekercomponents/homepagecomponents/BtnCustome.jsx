@@ -70,9 +70,13 @@ function BtnCustome(props) {
                 if (signUpInfo?.Password.length > 4) {
                   if (signUpInfo.consent) {
                     axios
-                      .post("http://localhost:3005/sign-up", signUpInfo, {
-                        withCredentials: true,
-                      })
+                      .post(
+                        "https://senior-project-live-api.onrender.com/sign-up",
+                        signUpInfo,
+                        {
+                          withCredentials: true,
+                        }
+                      )
                       .then((res) => {
                         setUser(jwt_decode(res.data.accessToken));
                         redirect();

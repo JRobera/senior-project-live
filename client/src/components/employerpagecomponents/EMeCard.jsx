@@ -35,7 +35,7 @@ function EMeCard() {
         onClick={() => {
           axios
             .post(
-              "http://localhost:3005/employer/logout",
+              "https://senior-project-live-api.onrender.com/employer/logout",
               {},
               { withCredentials: true }
             )

@@ -15,7 +15,9 @@ function FoundJobPost() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/found/job-post/${params.id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/found/job-post/${params.id}`
+      )
       .then((response) => {
         setFoundJobPost(response.data);
       });

@@ -7,10 +7,12 @@ function Reported() {
   const [reportes, setReportes] = useState(null);
 
   function handleRefreshOnDelete() {
-    axios.get("http://localhost:3005/get-reports").then((response) => {
-      setReportes(response.data);
-      console.log(response.data);
-    });
+    axios
+      .get("https://senior-project-live-api.onrender.com/get-reports")
+      .then((response) => {
+        setReportes(response.data);
+        console.log(response.data);
+      });
   }
 
   useEffect(() => {
@@ -35,7 +37,7 @@ function Reported() {
                 onClick={() => {
                   axios
                     .delete(
-                      `http://localhost:3005/delete-reported/${report?._id}/${report?.postId?._id}`
+                      `https://senior-project-live-api.onrender.com/delete-reported/${report?._id}/${report?.postId?._id}`
                     )
                     .then((response) => {
                       handleRefreshOnDelete();

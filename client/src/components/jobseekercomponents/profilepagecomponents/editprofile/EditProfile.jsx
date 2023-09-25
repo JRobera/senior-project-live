@@ -15,7 +15,9 @@ function EditProfile({ handleEditProfclick }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/get-user-profile/${user?.u_id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get-user-profile/${user?.u_id}`
+      )
       .then((response) => {
         setUserProfile(response.data);
         console.log(response.data);
@@ -164,16 +166,19 @@ function EditProfile({ handleEditProfclick }) {
 
   function handleSubmit() {
     axios
-      .post(`http://localhost:3005/edit-profile/${user?.u_id}`, {
-        newUserName,
-        userJobTitle,
-        aboutUser,
-        userLocation,
-        skills,
-        educations,
-        experiences,
-        certifications,
-      })
+      .post(
+        `https://senior-project-live-api.onrender.com/edit-profile/${user?.u_id}`,
+        {
+          newUserName,
+          userJobTitle,
+          aboutUser,
+          userLocation,
+          skills,
+          educations,
+          experiences,
+          certifications,
+        }
+      )
       .then((response) => {
         console.log(response);
       });
@@ -255,7 +260,7 @@ function EditProfile({ handleEditProfclick }) {
                         handleDeleteExperience(i);
                         axios
                           .delete(
-                            `http://localhost:3005/delete-exp/${experience?._id}`
+                            `https://senior-project-live-api.onrender.com/delete-exp/${experience?._id}`
                           )
                           .then((response) => {});
                       }}
@@ -311,7 +316,7 @@ function EditProfile({ handleEditProfclick }) {
                         handleDeleteEducation(i);
                         axios
                           .delete(
-                            `http://localhost:3005/delete-edu/${education?._id}`
+                            `https://senior-project-live-api.onrender.com/delete-edu/${education?._id}`
                           )
                           .then((response) => {});
                       }}
@@ -415,7 +420,7 @@ function EditProfile({ handleEditProfclick }) {
                         handleDeleteCertification(i);
                         axios
                           .delete(
-                            `http://localhost:3005/delete-cer/${certification?._id}`
+                            `https://senior-project-live-api.onrender.com/delete-cer/${certification?._id}`
                           )
                           .then((response) => {});
                       }}

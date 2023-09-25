@@ -14,7 +14,7 @@ const RefreshToken = () => {
   try {
     axios
       .post(
-        `http://localhost:3005/api/refresh`,
+        `https://senior-project-live-api.onrender.com/api/refresh`,
         {},
         {
           withCredentials: true,

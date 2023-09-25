@@ -25,10 +25,12 @@ function EmployerJobContainer() {
     useState(false);
 
   function handleRefetchJoposts() {
-    axios.get(`http://localhost:3005/get-job-posts`).then((response) => {
-      setJobPostItems(response.data);
-      // console.log(response.data);
-    });
+    axios
+      .get(`https://senior-project-live-api.onrender.com/get-job-posts`)
+      .then((response) => {
+        setJobPostItems(response.data);
+        // console.log(response.data);
+      });
   }
 
   useEffect(() => {
@@ -37,7 +39,9 @@ function EmployerJobContainer() {
 
   const handleClick = (id) => {
     axios
-      .get(`http://localhost:3005/get-selected-post/${id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get-selected-post/${id}`
+      )
       .then((response) => {
         setJobDetails(response.data);
         // console.log(response.data);

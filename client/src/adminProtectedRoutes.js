@@ -8,7 +8,7 @@ import { generateError } from "./utility/Toasts";
 async function Auth() {
   try {
     const response = await axios.post(
-      "http://localhost:3005/api/arefresh",
+      "https://senior-project-live-api.onrender.com/api/arefresh",
       {},
       {
         withCredentials: true,
@@ -34,7 +34,7 @@ function AdminProtectedRoutes() {
     try {
       axios
         .post(
-          `http://localhost:3005/api/arefresh`,
+          `https://senior-project-live-api.onrender.com/api/arefresh`,
           {},
           {
             withCredentials: true,

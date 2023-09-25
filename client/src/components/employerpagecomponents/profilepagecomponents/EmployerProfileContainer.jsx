@@ -27,7 +27,9 @@ function EmployerProfileContainer() {
 
   function handleProfileEditRefresh() {
     axios
-      .get(`http://localhost:3005/get-user-profile/${user?.u_id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get-user-profile/${user?.u_id}`
+      )
       .then((response) => {
         setUpUser(response.data);
         // console.log(response.data);
@@ -36,7 +38,9 @@ function EmployerProfileContainer() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/get-user-profile/${user?.u_id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get-user-profile/${user?.u_id}`
+      )
       .then((response) => {
         setUpUser(response.data);
         // console.log(response.data);

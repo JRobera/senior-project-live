@@ -40,7 +40,7 @@ function Navbar({ handleShowNewAdminPopUp, handleShowDeleteAdminPopUp }) {
             onClick={() => {
               axios
                 .post(
-                  "http://localhost:3005/admin/logout",
+                  "https://senior-project-live-api.onrender.com/admin/logout",
                   {},
                   { withCredentials: true }
                 )

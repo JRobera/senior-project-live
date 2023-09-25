@@ -40,9 +40,12 @@ function ForgotPassword() {
                   setSending(true);
 
                   axios
-                    .post(`http://localhost:3005/forgot-password`, {
-                      resetEmail: resetEmail,
-                    })
+                    .post(
+                      `https://senior-project-live-api.onrender.com/forgot-password`,
+                      {
+                        resetEmail: resetEmail,
+                      }
+                    )
                     .then((response) => {
                       generatesuccess(response.data);
                       setSending(false);

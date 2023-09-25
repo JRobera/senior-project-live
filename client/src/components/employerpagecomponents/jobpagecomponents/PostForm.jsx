@@ -105,7 +105,10 @@ function JobPostingForm({ showModal, setShowModal, handleRefetchJoposts }) {
         email,
         amount,
       };
-      await axios.post(`http://localhost:3005/postjob/${user?.u_id}`, body);
+      await axios.post(
+        `https://senior-project-live-api.onrender.com/postjob/${user?.u_id}`,
+        body
+      );
       // Here is where sweet alert will be instead of alert
       Swal.fire(
         "Job Posted!",

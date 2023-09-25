@@ -70,7 +70,7 @@ function EmployerBtnCustome(props) {
                     console.log("sign up");
                     axios
                       .post(
-                        "http://localhost:3005/sign-up/employer",
+                        "https://senior-project-live-api.onrender.com/sign-up/employer",
                         signUpInfo,
                         {
                           withCredentials: true,

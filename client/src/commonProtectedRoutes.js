@@ -9,7 +9,7 @@ import { generateError } from "./utility/Toasts";
 async function Auth() {
   try {
     const response = await axios.post(
-      "http://localhost:3005/api/erefresh",
+      "https://senior-project-live-api.onrender.com/api/erefresh",
       {},
       {
         withCredentials: true,
@@ -20,7 +20,7 @@ async function Auth() {
     console.log(error);
     try {
       const response = await axios.post(
-        "http://localhost:3005/api/refresh",
+        "https://senior-project-live-api.onrender.com/api/refresh",
         {},
         {
           withCredentials: true,
@@ -49,7 +49,7 @@ function CommonProtectedRoutes() {
     try {
       axios
         .post(
-          `http://localhost:3005/api/refresh`,
+          `https://senior-project-live-api.onrender.com/api/refresh`,
           {},
           {
             withCredentials: true,
@@ -63,7 +63,7 @@ function CommonProtectedRoutes() {
       try {
         axios
           .post(
-            `http://localhost:3005/api/erefresh`,
+            `https://senior-project-live-api.onrender.com/api/erefresh`,
             {},
             {
               withCredentials: true,

@@ -18,11 +18,14 @@ function ReplyComment({
   function handleReply() {
     if (replyComment) {
       axios
-        .post("http://localhost:3005/add/comment/reply", {
-          commentId: commentId,
-          userId: userId,
-          reply: replyComment,
-        })
+        .post(
+          "https://senior-project-live-api.onrender.com/add/comment/reply",
+          {
+            commentId: commentId,
+            userId: userId,
+            reply: replyComment,
+          }
+        )
         .then((response) => {
           console.log(response.data);
           setReplyComment("");
@@ -32,7 +35,9 @@ function ReplyComment({
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/get/comment/reply/${commentId}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get/comment/reply/${commentId}`
+      )
       .then((response) => {
         console.log(response.data.Comment_reply);
         handlesetReplies(response.data.Comment_reply);

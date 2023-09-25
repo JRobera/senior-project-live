@@ -12,7 +12,7 @@ function AddComment({ postId, userId, commentCount }) {
   function handleSubmit() {
     if (newComment) {
       axios
-        .post(`http://localhost:3005/add/comment`, {
+        .post(`https://senior-project-live-api.onrender.com/add/comment`, {
           postId: postId,
           userId: userId,
           comment: newComment,
@@ -24,7 +24,9 @@ function AddComment({ postId, userId, commentCount }) {
   }
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/get/comments/${postId}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get/comments/${postId}`
+      )
       .then((response) => {
         commentCount(response.data.Comment.length);
         setcomment(response.data.Comment);

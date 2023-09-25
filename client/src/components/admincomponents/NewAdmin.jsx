@@ -14,7 +14,9 @@ function NewAdmin({ handleShowNewAdminPopUp }) {
 
   function handleCreateAdmin() {
     axios
-      .post("http://localhost:3005/new-admin", { newAdmin })
+      .post("https://senior-project-live-api.onrender.com/new-admin", {
+        newAdmin,
+      })
       .then((response) => {
         generatesuccess(response.data);
         handleShowNewAdminPopUp();

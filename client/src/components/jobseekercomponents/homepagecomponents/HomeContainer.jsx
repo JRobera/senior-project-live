@@ -28,9 +28,13 @@ function HomeContainer() {
       };
     });
     axios
-      .post("http://localhost:3005/google-sign-in", signUpInfo, {
-        withCredentials: true,
-      })
+      .post(
+        "https://senior-project-live-api.onrender.com/google-sign-in",
+        signUpInfo,
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         setUser(jwt_decode(res.data.accessToken));
       });

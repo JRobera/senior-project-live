@@ -17,7 +17,9 @@ function MyChat({ socket, selectedC, searchchat }) {
     // console.log(user.u_id);
     if (currentUser) {
       axios
-        .get(`http://localhost:3005/my-chats/${currentUser}`)
+        .get(
+          `https://senior-project-live-api.onrender.com/my-chats/${currentUser}`
+        )
         .then(({ data }) => {
           setChats(data);
           // console.log(data);

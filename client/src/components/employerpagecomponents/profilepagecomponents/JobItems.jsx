@@ -44,7 +44,7 @@ function JobItems({ postid, userid, userimg, jobtitle, handleJobPost }) {
             onClick={() => {
               axios
                 .delete(
-                  `http://localhost:3005/delete/job-post/${postid}/${userid}`
+                  `https://senior-project-live-api.onrender.com/delete/job-post/${postid}/${userid}`
                 )
                 .then((resposne) => {
                   generatesuccess(resposne.data);

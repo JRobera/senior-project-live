@@ -68,7 +68,7 @@ function App() {
     try {
       axios
         .post(
-          `http://localhost:3005/api/refresh`,
+          `https://senior-project-live-api.onrender.com/api/refresh`,
           {},
           {
             withCredentials: true,
@@ -87,7 +87,7 @@ function App() {
     try {
       axios
         .post(
-          `http://localhost:3005/api/erefresh`,
+          `https://senior-project-live-api.onrender.com/api/erefresh`,
           {},
           {
             withCredentials: true,

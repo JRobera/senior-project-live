@@ -17,7 +17,9 @@ function FoundArticle() {
   // feach data onload
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/found/article/${params.id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/found/article/${params.id}`
+      )
       .then((response) => {
         if (response) {
           setArticle(response.data);

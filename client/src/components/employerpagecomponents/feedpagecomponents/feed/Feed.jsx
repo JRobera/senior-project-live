@@ -23,16 +23,20 @@ function Feed() {
   const [isExpand, setExpand] = useState(false);
 
   function handleRefreshOnPost() {
-    axios.get("http://localhost:3005/get/posts").then((response) => {
-      setPosts(response.data);
-    });
+    axios
+      .get("https://senior-project-live-api.onrender.com/get/posts")
+      .then((response) => {
+        setPosts(response.data);
+      });
   }
 
   useEffect(() => {
-    axios.get("http://localhost:3005/get/posts").then((response) => {
-      setPosts(response.data);
-      // console.log(response.data);
-    });
+    axios
+      .get("https://senior-project-live-api.onrender.com/get/posts")
+      .then((response) => {
+        setPosts(response.data);
+        // console.log(response.data);
+      });
   }, []);
 
   //
@@ -57,7 +61,7 @@ function Feed() {
     if (textPost !== "") {
       axios
         .post(
-          `http://localhost:3005/new/text-post/${user.u_id}`,
+          `https://senior-project-live-api.onrender.com/new/text-post/${user.u_id}`,
           { textPost },
           {
             headers: {

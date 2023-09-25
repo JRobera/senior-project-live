@@ -24,7 +24,9 @@ function ManageItem({ handleSelectedTab, handleFs, handleGroup, user, icon }) {
                 setActive(tab);
                 handleSelectedTab(tab);
                 axios
-                  .get(`http://localhost:3005/ff/${user.u_id}`)
+                  .get(
+                    `https://senior-project-live-api.onrender.com/ff/${user.u_id}`
+                  )
                   .then((response) => {
                     console.log(response.data);
                     let followingandfollowers = response.data.Following.concat(

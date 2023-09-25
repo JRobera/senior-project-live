@@ -24,7 +24,10 @@ function TopProfileContainer({ fuser, handleProfileEditRefresh }) {
 
     // Make the API request to update the profile image
     axios
-      .put(`http://localhost:3005/change-profile/${user.u_id}`, formData)
+      .put(
+        `https://senior-project-live-api.onrender.com/change-profile/${user.u_id}`,
+        formData
+      )
       .then((response) => {
         // Update the selected profile image state
         setSelectedProfileImage(response.data.Picture);
@@ -45,7 +48,10 @@ function TopProfileContainer({ fuser, handleProfileEditRefresh }) {
 
     // Make the API request to update the profile image
     axios
-      .put(`http://localhost:3005/change-cover/${user.u_id}`, formData)
+      .put(
+        `https://senior-project-live-api.onrender.com/change-cover/${user.u_id}`,
+        formData
+      )
       .then((response) => {
         // Update the selected profile image state
         setSelectedCoverImage(response.data.Profile_bg);

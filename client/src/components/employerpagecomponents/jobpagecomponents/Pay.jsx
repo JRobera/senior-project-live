@@ -28,14 +28,14 @@ function Pay({ fname, lname, email, amount, tx_ref, public_key }) {
         <input
           type="hidden"
           name="callback_url"
-          value={`http://localhost:3005/payment-callback?tx_ref=${tx_ref}`}
+          value={`https://senior-project-live-api.onrender.com/payment-callback?tx_ref=${tx_ref}`}
         />
         <input
           type="hidden"
           name="return_url"
           // value="https://api.chapa.co/v1/hosted/pay"
           // value="http://localhost:3000/jobs"
-          value={`http://localhost:3005/payment-callback?tx_ref=${tx_ref}`}
+          value={`https://senior-project-live-api.onrender.com/payment-callback?tx_ref=${tx_ref}`}
         />
         <input type="hidden" name="meta[title]" value="test" />
         <br />
@@ -77,14 +77,14 @@ function Pay({ fname, lname, email, amount, tx_ref, public_key }) {
 //         <input
 //           type="hidden"
 //           name="callback_url"
-//           value={`http://localhost:3005/payment-callback?tx_ref=${tx_ref}`}
+//           value={`https://senior-project-live-api.onrender.com/payment-callback?tx_ref=${tx_ref}`}
 //         />
 //         <input
 //           type="hidden"
 //           name="return_url"
 //           // value="https://api.chapa.co/v1/hosted/pay"
 //           // value="http://localhost:3000/jobs"
-//           value={`http://localhost:3005/payment-callback?tx_ref=${tx_ref}`}
+//           value={`https://senior-project-live-api.onrender.com/payment-callback?tx_ref=${tx_ref}`}
 //         />
 
 //         <input type="hidden" name="meta[title]" value="test" />

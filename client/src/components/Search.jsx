@@ -16,7 +16,9 @@ function Search() {
   function search() {
     if (query && filter) {
       axios
-        .get(`http://localhost:3005/search/${filter}/${query}/${user.u_id}`)
+        .get(
+          `https://senior-project-live-api.onrender.com/search/${filter}/${query}/${user.u_id}`
+        )
         .then((response) => {
           setSearchResult(response.data);
           // console.log(response.data);

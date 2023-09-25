@@ -7,7 +7,7 @@ import { GrAdd } from "react-icons/gr";
 function Friends(props) {
   function hanldleFollow() {
     axios
-      .patch(`http://localhost:3005/follow/user`, {
+      .patch(`https://senior-project-live-api.onrender.com/follow/user`, {
         poster_id: props.newFollow,
         user_id: props.currentUser,
       })

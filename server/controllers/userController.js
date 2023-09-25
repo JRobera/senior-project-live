@@ -54,7 +54,9 @@ const verifyResetPasswordLink = async (req, res) => {
         try {
           jwt.verify(token, secret, (err, user) => {
             if (err) return res.sendStatus(403);
-            res.redirect(`http://localhost:3000/reset-password/${token}/${id}`);
+            res.redirect(
+              `https://habesha-net.onrender.com/reset-password/${token}/${id}`
+            );
           });
         } catch (error) {
           res.json(error.message);

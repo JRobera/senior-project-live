@@ -29,7 +29,7 @@ function MyPost({ post, handlePost, userid }) {
   function handleUpdatePost() {
     setEditPost(false);
     axios
-      .patch(`http://localhost:3005/edit/post`, {
+      .patch(`https://senior-project-live-api.onrender.com/edit/post`, {
         postid: post._id,
         description: newDescription,
       })
@@ -73,7 +73,7 @@ function MyPost({ post, handlePost, userid }) {
             onClick={() => {
               axios
                 .delete(
-                  `http://localhost:3005/delete/post/${post._id}/${userid}`
+                  `https://senior-project-live-api.onrender.com/delete/post/${post._id}/${userid}`
                 )
                 .then((resposne) => {
                   generatesuccess(resposne.data);

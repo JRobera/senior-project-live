@@ -16,7 +16,7 @@ function FollowCard({
   const { content } = useContext(AppContext);
   function hanldleFollow() {
     axios
-      .patch(`http://localhost:3005/follow/user`, {
+      .patch(`https://senior-project-live-api.onrender.com/follow/user`, {
         poster_id: newFollow,
         user_id: currentUser,
       })

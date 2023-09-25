@@ -11,9 +11,11 @@ function ManageUsers() {
   const [users, setUsers] = useState([]);
 
   function handleRefreshOnDelete() {
-    axios.get("http://localhost:3005/admin-get-users").then((response) => {
-      setUsers(response.data);
-    });
+    axios
+      .get("https://senior-project-live-api.onrender.com/admin-get-users")
+      .then((response) => {
+        setUsers(response.data);
+      });
   }
 
   useEffect(() => {
@@ -53,7 +55,9 @@ function ManageUsers() {
 
   function handleRemoveUser(id) {
     axios
-      .delete(`http://localhost:3005/admin-delete-user/${id}`)
+      .delete(
+        `https://senior-project-live-api.onrender.com/admin-delete-user/${id}`
+      )
       .then((response) => {
         handleRefreshOnDelete();
         generatesuccess(response.data);
@@ -61,14 +65,18 @@ function ManageUsers() {
   }
   function handleBlockUser(id) {
     axios
-      .patch(`http://localhost:3005/admin-block-user/${id}`)
+      .patch(
+        `https://senior-project-live-api.onrender.com/admin-block-user/${id}`
+      )
       .then((response) => {
         generatesuccess(response.data);
       });
   }
   function handleUnblockUser(id) {
     axios
-      .patch(`http://localhost:3005/admin-unblock-user/${id}`)
+      .patch(
+        `https://senior-project-live-api.onrender.com/admin-unblock-user/${id}`
+      )
       .then((response) => {
         generatesuccess(response.data);
       });

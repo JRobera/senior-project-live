@@ -15,7 +15,9 @@ function EditProfile({ handleEditProfclick }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/get-user-profile/${user?.u_id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get-user-profile/${user?.u_id}`
+      )
       .then((response) => {
         setUserProfile(response.data);
         console.log(response.data);
@@ -70,13 +72,16 @@ function EditProfile({ handleEditProfclick }) {
 
   function handleSubmit() {
     axios
-      .post(`http://localhost:3005/edit-emp-profile/${user?.u_id}`, {
-        newUserName,
-        userJobTitle,
-        aboutUser,
-        userLocation,
-        certifications,
-      })
+      .post(
+        `https://senior-project-live-api.onrender.com/edit-emp-profile/${user?.u_id}`,
+        {
+          newUserName,
+          userJobTitle,
+          aboutUser,
+          userLocation,
+          certifications,
+        }
+      )
       .then((response) => {
         console.log(response);
       });

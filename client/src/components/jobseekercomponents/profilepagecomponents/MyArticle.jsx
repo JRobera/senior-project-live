@@ -53,7 +53,7 @@ function MyArticle({ name, description, message, id, userid, handleArticle }) {
               onClick={() => {
                 axios
                   .delete(
-                    `http://localhost:3005/delete/article/${id}/${userid}`
+                    `https://senior-project-live-api.onrender.com/delete/article/${id}/${userid}`
                   )
                   .then((resposne) => {
                     generatesuccess(resposne.data);

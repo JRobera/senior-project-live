@@ -23,7 +23,7 @@ export default function ApplicationFormModal({ jobId, closeModal }) {
     setIsSubmiting(true);
     axios
       .post(
-        `http://localhost:3005/upload/resume/${jobId}/${user?.u_id}`,
+        `https://senior-project-live-api.onrender.com/upload/resume/${jobId}/${user?.u_id}`,
         formData,
         {
           headers: {

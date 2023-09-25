@@ -11,7 +11,9 @@ function AddFriends() {
 
   function handleUnfollowedUsers() {
     axios
-      .get(`http://localhost:3005/get/new/network/${user?.u_id}`)
+      .get(
+        `https://senior-project-live-api.onrender.com/get/new/network/${user?.u_id}`
+      )
       .then((response) => {
         // console.log(response.data);
         setNetworkUsers(response.data);
